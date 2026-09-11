@@ -321,7 +321,7 @@ export function estimate(input: EstimateInput, tariffData: unknown, opts: Estima
   if (reasons.length) return fail(t, 'request_only', reasons, assumptions);
 
   // 4. Price legs: outbound as given, return in the reverse direction
-  // A return leg never inherits the outbound distance: roads and directions differ (PLAN §10).
+  // A return leg never inherits the outbound distance: roads and directions differ.
   const specs: Array<[string, string, number | undefined, LocalDateTime, LegTime]> = [[input.from, input.to, input.distanceKm, input.pickup, outT]];
   if (input.returnLeg) specs.push([input.to, input.from, input.returnLeg.distanceKm, input.returnLeg, retT!]);
   const legs: Leg[] = [];

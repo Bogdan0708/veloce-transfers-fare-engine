@@ -5,10 +5,10 @@ tables, DST-aware clock-change handling, return-trip pricing without
 inherited distance, manual-review states for edge cases, and an enquiry
 handoff payload.
 
-Extracted from the production site (Astro) at revision `6b8bf12`. The tariff
-figures in `src/tariffs.json` are illustrative — they preserve the real
-production schema and shape but are not guaranteed to match the operator's
-current live prices.
+Extracted from the production site (Astro) at revision `6b8bf12`. Tariff
+figures mirror the operator's published price list as of the extraction date
+(2026-09-07) and are kept unchanged because the tests depend on them; they
+are not maintained here and may differ from current live prices.
 
 ## Run
 
