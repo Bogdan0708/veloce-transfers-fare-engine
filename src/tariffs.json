@@ -1,0 +1,164 @@
+{
+  "_provenance": "Extracted from the Veloce Transfers site @ 6b8bf12 (private). Tariff figures are illustrative.",
+  "schemaVersion": 1,
+  "tariffVersion": "2026-09-07",
+  "effectiveFrom": "2026-09-07",
+  "effectiveTo": null,
+  "currency": "CHF",
+  "approval": "internal approval on file, 2026-09-07",
+  "timeZone": "Europe/Zurich",
+  "categories": {
+    "sedan": {
+      "label": "Berlina (Classe C / E)",
+      "seats": 4,
+      "fareBasis": "sedan",
+      "multiplierBp": 10000
+    },
+    "sedan_s": {
+      "label": "Classe S",
+      "seats": 4,
+      "fareBasis": "sedan",
+      "multiplierBp": 11000
+    },
+    "van": {
+      "label": "Van (Classe V, 8 posti)",
+      "seats": 8,
+      "fareBasis": "van",
+      "multiplierBp": 10000
+    }
+  },
+  "places": {
+    "lugano": {
+      "label": "Lugano",
+      "kind": "zone",
+      "fixedFareOrigin": true,
+      "short": "Lugano"
+    },
+    "malpensa": {
+      "label": "Milano Malpensa (MXP)",
+      "kind": "airport",
+      "short": "Malpensa"
+    },
+    "linate": {
+      "label": "Milano Linate (LIN)",
+      "kind": "airport",
+      "short": "Linate"
+    },
+    "centrale": {
+      "label": "Milano Centrale",
+      "kind": "station",
+      "short": "Milano Centrale"
+    },
+    "bergamo": {
+      "label": "Bergamo Orio al Serio (BGY)",
+      "kind": "airport",
+      "short": "Bergamo"
+    },
+    "chiasso": {
+      "label": "Chiasso",
+      "kind": "town",
+      "short": "Chiasso"
+    },
+    "mendrisio": {
+      "label": "Mendrisio",
+      "kind": "town",
+      "short": "Mendrisio"
+    },
+    "zurich": {
+      "label": "Zurigo (ZRH)",
+      "kind": "airport",
+      "requestOnly": true,
+      "short": "Zurigo"
+    },
+    "geneva": {
+      "label": "Ginevra (GVA)",
+      "kind": "airport",
+      "requestOnly": true,
+      "short": "Ginevra"
+    },
+    "basel": {
+      "label": "Basilea (BSL)",
+      "kind": "airport",
+      "requestOnly": true,
+      "short": "Basilea"
+    }
+  },
+  "routes": [
+    {
+      "from": "lugano",
+      "to": "malpensa",
+      "sedanMinor": 22000,
+      "vanMinor": 25000,
+      "reverseSame": true
+    },
+    {
+      "from": "lugano",
+      "to": "linate",
+      "sedanMinor": 25000,
+      "vanMinor": 28000,
+      "reverseSame": true
+    },
+    {
+      "from": "lugano",
+      "to": "centrale",
+      "sedanMinor": 25000,
+      "vanMinor": 28000,
+      "reverseSame": true
+    },
+    {
+      "from": "lugano",
+      "to": "bergamo",
+      "sedanMinor": 30000,
+      "vanMinor": 35000,
+      "reverseSame": true
+    },
+    {
+      "from": "lugano",
+      "to": "chiasso",
+      "sedanMinor": 12000,
+      "vanMinor": 15000,
+      "reverseSame": true
+    },
+    {
+      "from": "lugano",
+      "to": "mendrisio",
+      "sedanMinor": 8000,
+      "vanMinor": 10000,
+      "reverseSame": true
+    }
+  ],
+  "night": {
+    "bp": 1500,
+    "startInclusive": "22:00",
+    "endExclusive": "06:00",
+    "appliesTo": "base"
+  },
+  "distance": {
+    "enabled": true,
+    "perKmMinor": 275,
+    "minimumMinor": 8000,
+    "billing": "customer_leg_only"
+  },
+  "waiting": {
+    "includedMinutes": 60,
+    "perHourMinor": 6500,
+    "proRata": "minute"
+  },
+  "rounding": {
+    "incrementMinor": 100,
+    "mode": "half_up",
+    "stage": "per_leg"
+  },
+  "notice": {
+    "minimumHours": 12,
+    "maximumDays": 365
+  },
+  "included": [
+    "pedaggi",
+    "vignetta",
+    "passaggio frontiera",
+    "monitoraggio volo",
+    "parcheggio",
+    "ritiro al terminal"
+  ]
+}

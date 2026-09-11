@@ -1,0 +1,28 @@
+{
+  "name": "veloce-transfers-fare-engine",
+  "version": "1.0.0",
+  "description": "Deterministic fare calculation engine for a Ticino chauffeur/transfer service, extracted from the production site for portfolio evidence.",
+  "type": "module",
+  "main": "src/engine.ts",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "pricing-engine",
+    "typescript",
+    "timezones",
+    "vitest",
+    "switzerland"
+  ],
+  "author": "Vasile Bogdan Godja",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.0"
+  }
+}
